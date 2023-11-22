@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { ImageService } from 'src/service/image.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tasks';
+
+
+  constructor(private http:HttpClient, private imageService: ImageService){
+
+  }
 }
