@@ -1,1 +1,10 @@
-<p>imgplace works!</p>
+<div class="maincontainer">
+    <div class="maincontainer__addphoto">
+        <h3>Add Your Photo</h3>
+        <form #photoForm="ngForm" (ngSubmit)="uploadImage(photoForm)">
+            <label>Select an image: </label>
+            <input type="file" name="imageFile" accept="image/png, image/jpeg" (change)="handleFileInput($event)">
+            <input type="submit" value="Upload Image" [disabled]="!imageFile">
+        </form>
+    </div>
+</div>

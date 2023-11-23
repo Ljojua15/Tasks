@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { images } from 'src/modules/image.module';
+import { Component, OnInit } from '@angular/core';
+import { Header, Images } from 'src/modules/image.module';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -7,9 +7,35 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './uploadimg.component.html',
   styleUrls: ['./uploadimg.component.scss']
 })
-export class UploadimgComponent {
-  addImg(addImg:images){
-    console.log('lasha')
+export class UploadimgComponent implements OnInit {
+
+  constructor(private http: HttpClient){}
+
+
+  ngOnInit(): void {
+    this.upDate();
   }
+
+  upDatePage(){
+    this.upDate();
+  }
+
+
+  addImg(addedImg:Images){
+    // console.log(addedImg)
+    this.http.post('https://static.tsameti.com/tournaments-images/', addedImg)
+    .subscribe((res) =>{
+      // console.log(res);
+    })
+  }
+
+  private upDate(){
+    this.http.get('https://static.tsameti.com/')
+    .subscribe((res) => {
+      console.log(res)
+    })
+  }
+
+
 }
 
