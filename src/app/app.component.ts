@@ -9,9 +9,4 @@ import { ImageService } from 'src/service/image.service';
 })
 export class AppComponent {
   title = 'Tasks';
-
-
-  constructor(private http:HttpClient, private imageService: ImageService){
-
-  }
 }

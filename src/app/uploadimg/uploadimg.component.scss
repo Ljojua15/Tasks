@@ -1,0 +1,29 @@
+.maincontainer {
+    width: 100%;
+    max-width: 1200px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    &__addphoto {
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+        background-color: rgb(211, 206, 206);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__printphoto {
+        width: 1000px;
+        height: 450px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
