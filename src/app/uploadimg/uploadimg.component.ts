@@ -8,5 +8,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./uploadimg.component.scss']
 })
 export class UploadimgComponent {
-
+  addImg(addImg:images){
+    console.log('lasha')
+  }
 }
+
