@@ -7,20 +7,12 @@ import { UploadimgComponent } from './uploadimg/uploadimg.component';
 import { ImgplaceComponent } from './imgplace/imgplace.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { PostGetComponent } from './post-get/post-get.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    UploadimgComponent,
-    ImgplaceComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, UploadimgComponent, ImgplaceComponent, PostGetComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
