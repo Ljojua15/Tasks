@@ -7,12 +7,14 @@ import { UploadimgComponent } from './uploadimg/uploadimg.component';
 import { ImgplaceComponent } from './imgplace/imgplace.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { JeiraniComponent } from './jeirani/jeirani.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UploadimgComponent,
-    ImgplaceComponent
+    ImgplaceComponent,
+    JeiraniComponent
   ],
   imports: [
     BrowserModule,
