@@ -7,6 +7,7 @@ import { UploadimgComponent } from './uploadimg/uploadimg.component';
 import { ImgplaceComponent } from './imgplace/imgplace.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+<<<<<<< HEAD
 import { JeiraniComponent } from './jeirani/jeirani.component';
 
 @NgModule({
@@ -22,7 +23,14 @@ import { JeiraniComponent } from './jeirani/jeirani.component';
     FormsModule,
     HttpClientModule
   ],
+=======
+import { PostGetComponent } from './post-get/post-get.component';
+
+@NgModule({
+  declarations: [AppComponent, UploadimgComponent, ImgplaceComponent, PostGetComponent],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+>>>>>>> 1072643bc9350e5a8f7abdc2c7dd84dd0427e7f4
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

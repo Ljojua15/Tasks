@@ -2,8 +2,9 @@
     <div class="maincontainer__addphoto">
         <h3>Add Your Photo</h3>
         <form #photoForm="ngForm" (ngSubmit)="addImg(photoForm.value)">
+
             <label>აირჩიე ფოტო: </label>
-            <input type="file" name="url" ngModel>
+            <input type="file"  name="url" ngModel>
 
             <input type="submit">
         </form>
